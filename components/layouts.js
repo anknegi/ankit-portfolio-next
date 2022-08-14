@@ -18,14 +18,9 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="This is the portfolio site of Ankit Negi who is a full stack developer based in India. This portfolio site  gives introduction about him and his skills."
+          content="Hi, Welcome to my portfolio site. In this, I will share my blogs, my work experience, my skills with world and later in future I will add my video tutorials that will exclusively available only here for free always."
         />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
+        <meta property="og:image" content="/favicon.ico" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
