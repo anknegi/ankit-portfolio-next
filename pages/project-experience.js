@@ -6,7 +6,7 @@ export default function WorkExperience() {
   return (
     <Layout>
       <Head>
-        <title>My work experience</title>
+        <title>My Project experience</title>
       </Head>
       <h1>My project experience</h1>
       <h2>TCS Client's Project</h2>
@@ -28,7 +28,6 @@ export default function WorkExperience() {
           <li>Angular JS</li>
         </ul>
       </p>
-
       <h2>Mindtree Client's Project</h2>
       <p>
         Worked on two internal project with one of the biggest client of
@@ -95,6 +94,10 @@ export default function WorkExperience() {
       </p>
       <Link href="/work-experience">
         <a>← Work Experience</a>
+      </Link>
+      &nbsp; | &nbsp;
+      <Link href="/my-skills">
+        <a>Skills details →</a>
       </Link>
     </Layout>
   );
