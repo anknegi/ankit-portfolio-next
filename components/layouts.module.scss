@@ -1,73 +1,120 @@
 .container {
-    max-width: 36rem;
-    padding: 0 1rem;
-    margin: 3rem auto 6rem;
+  max-width: 36rem;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.backToHome {
+  margin: 3rem 0 2rem 0;
+}
+.second_header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: white;
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+    -45deg,
+    rgb(54, 155, 45, 0.8) 25%,
+    rgb(240, 245, 239) 50%,
+    rgba(247, 160, 0, 0.8) 50%
+  );
+  animation: AnimateBG 20s ease infinite;
+
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
-  
-  .header {
+  &__left {
+    .second_header__left_designation {
+      font-size: 20px;
+      font-weight: 400;
+      display: block;
+    }
+    .second_header__left_skills {
+      font-size: 15px;
+      font-weight: 300;
+      display: block;
+    }
+    margin: 1.5em 0 0 2em;
+    span {
+      display: inline;
+      font-size: 40px;
+      font-weight: 600;
+    }
+  }
+  &__right {
+    margin: 3em;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    &_link {
+      font-size: 12px;
+      display: block;
+      font-weight: 400;
+    }
+    &_menu {
+      font-size: 15px;
+      display: block;
+      font-weight: 400;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .second_header {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .backToHome {
-    margin: 3rem 0 2rem 0;
-  }
-  .second_header{
-    display:flex;
-    flex-direction: row;
-    width: 100%;
-    color:white;
-
-      background-size: 300% 300%;
-      background-image: linear-gradient(
-            -45deg, 
-            rgb(54, 155, 45,0.8) 25%,
-            rgb(240, 245, 239) 50%,  
-            rgba(247, 160, 0, 0.8) 50%
-      );  
-      animation: AnimateBG 20s ease infinite;
-
-    
-    @keyframes AnimateBG { 
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
-    }
     &__left {
-      .second_header__left_designation{
+      .second_header__left_designation {
         font-size: 20px;
         font-weight: 400;
-        display:block;
+        display: block;
       }
-      .second_header__left_skills{
+      .second_header__left_skills {
         font-size: 15px;
         font-weight: 300;
-        display:block;
+        display: block;
       }
-      margin: 1.5em 0 0 2em;
       span {
-        display:inline;
+        display: inline;
         font-size: 40px;
         font-weight: 600;
       }
     }
     &__right {
-   
-      margin: 3em;
-      a { text-decoration: none; color: white;}
+      margin-left: 2em;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      a {
+        text-decoration: none;
+        color: white;
+      }
       &_link {
-          font-size: 12px;
-          display:block;
-          font-weight: 400;
-        
+        font-size: 12px;
+        display: block;
+        font-weight: 400;
       }
       &_menu {
         font-size: 15px;
-        display:block;
+        display: block;
         font-weight: 400;
-      
-    }
+      }
     }
   }
+}
